@@ -4,12 +4,12 @@ lessbag
 Some useful less mixins.
 
 TODO:
-1. Helpers
-2. Color names
-3. Font stacks
-4. Css3 features
-5. Grids
-6. Buttons
+1. Helpers    
+2. Color names    
+3. Font stacks    
+4. Css3 features    
+5. Grids    
+6. Buttons    
 
 Status: Not ready for usage yet. But almost there :)
 
