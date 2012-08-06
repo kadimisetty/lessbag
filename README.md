@@ -16,6 +16,6 @@ Status: Not ready for usage yet. But almost there :)
 
 Many of these mixins were borrowed and edited from some of these locations:    
 1. [LESS ELemenets](http://www.lesselements.com)    
-2. [LESS-Mixins](https://github.com/tophermade/LESS-Mixins/downloads)
-3. [Useful CSS3 LESS Mixins](http://css-tricks.com/snippets/css/useful-css3-less-mixins/ )
-4. [A collection of LESS CSS mixins I've curated over time.](http://forrst.com/posts/A_collection_of_LESS_CSS_mixins_Ive_curated_ove-1M4)
+2. [LESS-Mixins](https://github.com/tophermade/LESS-Mixins/downloads)    
+3. [Useful CSS3 LESS Mixins](http://css-tricks.com/snippets/css/useful-css3-less-mixins/ )    
+4. [A collection of LESS CSS mixins I've curated over time.](http://forrst.com/posts/A_collection_of_LESS_CSS_mixins_Ive_curated_ove-1M4)    
