@@ -1,54 +1,184 @@
 
-.drop-shadow(@x-axis: 0, @y-axis: 1px, @blur: 2px, @alpha: 0.1) {
-  -webkit-box-shadow: @x-axis @y-axis @blur rgba(0, 0, 0, @alpha);
-  -moz-box-shadow: @x-axis @y-axis @blur rgba(0, 0, 0, @alpha);
-  box-shadow: @x-axis @y-axis @blur rgba(0, 0, 0, @alpha);
-}
-
 .rounded(@radius: 2px) {
-  -webkit-border-radius: @radius;
-  -moz-border-radius: @radius;
-  border-radius: @radius;
-  -moz-background-clip: padding; -webkit-background-clip: padding-box; background-clip: padding-box; 
+    -webkit-border-radius:    @radius;
+    -moz-border-radius:       @radius;
+    border-radius:            @radius;
+
+    -moz-background-clip:     padding;
+    -webkit-background-clip:  padding-box;
+    background-clip:          padding-box;
 }
 
-.border-radius(@topright: 0, @bottomright: 0, @bottomleft: 0, @topleft: 0) {
-  -webkit-border-top-right-radius: @topright;
-  -webkit-border-bottom-right-radius: @bottomright;
-  -webkit-border-bottom-left-radius: @bottomleft;
-  -webkit-border-top-left-radius: @topleft;
-  -moz-border-radius-topright: @topright;
-  -moz-border-radius-bottomright: @bottomright;
-  -moz-border-radius-bottomleft: @bottomleft;
-  -moz-border-radius-topleft: @topleft;
-  border-top-right-radius: @topright;
-  border-bottom-right-radius: @bottomright;
-  border-bottom-left-radius: @bottomleft;
-  border-top-left-radius: @topleft;
-  -moz-background-clip: padding; -webkit-background-clip: padding-box; background-clip: padding-box; 
+.border-radius (@radius: 4px) {
+    -webkit-border-radius: @radius;
+    -moz-border-radius:    @radius;
+    border-radius:         @radius;
+
+    -moz-background-clip:    padding;
+    -webkit-background-clip: padding-box;
+    background-clip:         padding-box;
 }
 
-.opacity(@opacity: 0.5) {
-  -moz-opacity: @opacity;
-  -khtml-opacity: @opacity;
-  -webkit-opacity: @opacity;
-  opacity: @opacity;
+.individual-border-radius(@topright: 0, @bottomright: 0, @bottomleft: 0, @topleft: 0) {
+    -webkit-border-top-right-radius:     @topright;
+    -webkit-border-bottom-right-radius:  @bottomright;
+    -webkit-border-bottom-left-radius:   @bottomleft;
+    -webkit-border-top-left-radius:      @topleft;
+
+    -moz-border-radius-topright:         @topright;
+    -moz-border-radius-bottomright:      @bottomright;
+    -moz-border-radius-bottomleft:       @bottomleft;
+    -moz-border-radius-topleft:          @topleft;
+
+    border-top-right-radius:             @topright;
+    border-bottom-right-radius:          @bottomright;
+    border-bottom-left-radius:           @bottomleft;
+    border-top-left-radius:              @topleft;
+
+    -moz-background-clip:                padding;
+    -webkit-background-clip:             padding-box;
+    background-clip:                     padding-box;
 }
 
-.scale(@ratio:1.5){
-  -webkit-transform:scale(@ratio);
-  -moz-transform:scale(@ratio);
-  transform:scale(@ratio);
+
+
+
+/*
+ * TRANSFORMS
+ */
+
+//Specifiy percentage, ex: 50 for 50%
+.opacity(@opacity: 50) {
+    -moz-opacity:     @opacity/100;
+    -khtml-opacity:   @opacity/100;
+    -webkit-opacity:  @opacity/100;
+    opacity:          @opacity/100;
 }
 
-.inner-shadow(@horizontal:0, @vertical:1px, @blur:2px, @alpha: 0.4) {
-  -webkit-box-shadow: inset @horizontal @vertical @blur rgba(0, 0, 0, @alpha);
-  -moz-box-shadow: inset @horizontal @vertical @blur rgba(0, 0, 0, @alpha);
-  box-shadow: inset @horizontal @vertical @blur rgba(0, 0, 0, @alpha);
+
+.scale(@ratio:2.0) {
+    -webkit-transform:  scale(@ratio);
+    -moz-transform:     scale(@ratio);
+    transform:          scale(@ratio);
+    -o-transform:       scale(@factor);
 }
 
-.box-shadow(@arguments) {
-  -webkit-box-shadow: @arguments;
-  -moz-box-shadow: @arguments;
-  box-shadow: @arguments;
+
+.skew (@deg, @deg2) {
+    -webkit-transform:  skew(@deg, @deg2);
+    -moz-transform:     skew(@deg, @deg2);
+    -ms-transform:      skew(@deg, @deg2);
+    -o-transform:       skew(@deg, @deg2);
+}
+
+
+
+
+
+
+
+
+
+
+
+/* SHADOWS:
+ * -------
+ * text-shadow, inner-shadow, box-shadow, drop-shadow
+ */
+
+.text-shadow (@string: 0 1px 3px rgba(0, 0, 0, 0.25)) {
+	text-shadow: @string;
+}
+
+.box-shadow (@string) {
+	-webkit-box-shadow: @string;
+	-moz-box-shadow:    @string;
+	box-shadow:         @string;
+}
+
+.inset-box-shadow(@horizontal: 0px, @vertical: 1px, @blur: 2px, @color: #CCC) {
+  -webkit-box-shadow: inset @horizontal @vertical @blur @color;
+  -moz-box-shadow: inset @horizontal @vertical @blur @color;
+  box-shadow: inset @horizontal @vertical @blur @color;
+}
+
+.drop-shadow (@x: 0, @y: 1px, @blur: 2px, @spread: 0, @alpha: 0.25) {
+	-webkit-box-shadow:  @x @y @blur @spread rgba(0, 0, 0, @alpha);
+	-moz-box-shadow:     @x @y @blur @spread rgba(0, 0, 0, @alpha);
+	box-shadow:          @x @y @blur @spread rgba(0, 0, 0, @alpha);
+}
+.inner-shadow (@x: 0, @y: 1px, @blur: 2px, @spread: 0, @alpha: 0.25) {
+	-webkit-box-shadow:  inset @x @y @blur @spread rgba(0, 0, 0, @alpha);
+	-moz-box-shadow:     inset @x @y @blur @spread rgba(0, 0, 0, @alpha);
+	box-shadow:          inset @x @y @blur @spread rgba(0, 0, 0, @alpha);
+}
+
+
+
+
+
+
+/* UTILITIES
+ * -------
+ */
+
+// Toggling content
+.hide {
+  display: none;
+}
+.show {
+  display: block;
+}
+
+// Visibility
+.invisible {
+  visibility: hidden;
+}
+
+
+// Clearfix
+// --------
+// For clearing floats like a boss h5bp.com/q
+.clearfix {
+  *zoom: 1;
+  &:before,
+  &:after {
+    display: table;
+    content: "";
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+
+// Sizing shortcuts
+// -------------------------
+.size(@height, @width) {
+  width: @width;
+  height: @height;
+}
+
+
+
+// CSS image replacement
+// -------------------------
+// Source: https://github.com/h5bp/html5-boilerplate/commit/aa0396eae757
+.hide-text {
+    /*
+       //BOOTSTRAP VERSIN
+    font: 0/0 a;
+    color: transparent;
+    text-shadow: none;
+    background-color: transparent;
+    border: 0;
+    */
+
+    VERSION FROM https://github.com/dancrew32/lesslib/blob/master/mixins.less
+    display: block;
+    text-indent: -999em;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    text-align: left;
+    direction: ltr; 
 }
