@@ -9,6 +9,13 @@
     background-clip:          padding-box;
 }
 
+
+
+/*
+Border Radius
+-------------
+Allows border specification with a single radius
+ */
 .border-radius (@radius: 4px) {
     -webkit-border-radius: @radius;
     -moz-border-radius:    @radius;
@@ -19,6 +26,8 @@
     background-clip:         padding-box;
 }
 
+// Individual Border Radius
+// Allow specifying individual radii for all borders
 .individual-border-radius(@topright: 0, @bottomright: 0, @bottomleft: 0, @topleft: 0) {
     -webkit-border-top-right-radius:     @topright;
     -webkit-border-bottom-right-radius:  @bottomright;
@@ -43,11 +52,8 @@
 
 
 
-/*
- * TRANSFORMS
- */
-
-//Specifiy percentage, ex: 50 for 50%
+// Opacity:
+// Specifiy percentage, ex: 50 for 50%
 .opacity(@opacity: 50) {
     -moz-opacity:     @opacity/100;
     -khtml-opacity:   @opacity/100;
@@ -56,6 +62,9 @@
 }
 
 
+// TRANSFORMS
+// ----------
+// Scale
 .scale(@ratio:2.0) {
     -webkit-transform:  scale(@ratio);
     -moz-transform:     scale(@ratio);
@@ -64,6 +73,7 @@
 }
 
 
+// Skew
 .skew (@deg, @deg2) {
     -webkit-transform:  skew(@deg, @deg2);
     -moz-transform:     skew(@deg, @deg2);
