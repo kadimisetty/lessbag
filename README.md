@@ -25,3 +25,4 @@ Many of these mixins were borrowed and edited from some of these locations:
 5. [mixins.less](https://github.com/dancrew32/lesslib/blob/master/mixins.less)
 6. Twitter Bootstrap    
 7. SASS Compass    
+8. normalize.css

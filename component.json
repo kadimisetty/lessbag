@@ -1,0 +1,7 @@
+{
+  "name": "lessbag",
+  "version": "0.4",
+  "main": "./lessbag.less",
+  "dependencies": {
+  }
+}
