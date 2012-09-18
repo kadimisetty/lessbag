@@ -1,0 +1,57 @@
+/* Utilities
+ */
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+.invisible {
+  visibility: hidden;
+}
+
+
+// Clearfix
+.clearfix {
+  *zoom: 1;
+  &:before,
+  &:after {
+    display: table;
+    content: "";
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+
+// Sizing shortcuts
+.size(@height, @width) {
+  width: @width;
+  height: @height;
+}
+
+
+
+// CSS image replacement
+.hide-text {
+    /*
+     * Bootstrap version combined with 
+     *  version from https://github.com/dancrew32/lesslib/blob/master/mixins.less
+    */
+    display: block;
+    text-indent: -999em;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    text-align: left;
+    direction: ltr; 
+
+    font: 0/0 a;
+    color: transparent;
+    text-shadow: none;
+    background-color: transparent;
+    border: 0;
+}

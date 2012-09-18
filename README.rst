@@ -2,19 +2,23 @@
 lessbag
 =======
 -------------------------------------------------
-A comprehensive ordered collection of less mixins.
+A comprehensive ordered collection of less mixins
 -------------------------------------------------
 
 :Version: 0.6
 :Authors: Sri Kadimisetty
 
-Added Sections:
-~~~~~~~~~~~~~~
+
+Added Sections
+--------------
 * Transforms
 * Shadows
 * Borders
 * Backgrounds
 * helpers
+
+STATUS
+------
 
 DOING:
 ~~~~~~
