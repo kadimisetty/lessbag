@@ -1,11 +1,15 @@
+=======
 lessbag
 =======
-Some useful less mixins.
+-------------------------------------------------
+A comprehensive ordered collection of less mixins.
+-------------------------------------------------
 
-Version: 0.4
+:Version: 0.6
+:Authors: Sri Kadimisetty
 
-Files:
-------
+Added Sections:
+~~~~~~~~~~~~~~
 * Transforms
 * Shadows
 * Borders
@@ -13,13 +17,16 @@ Files:
 * helpers
 
 DOING:
+~~~~~~
 Shadows
 
 DONE:
+~~~~~
 1. normalize.less
 2. Transforms
 
 TODO:    
+~~~~~
 Split to files
 1. Helpers    
 2. Color names    
@@ -29,8 +36,8 @@ Split to files
 6. Buttons    
 7. for More - Check SASS, etc.  for inspiration
 
-
-
+Credits:
+~~~~~~~~
 Many of these mixins were borrowed and edited from some of these locations:    
 1. [LESS ELemenets](http://www.lesselements.com)    
 2. [LESS-Mixins](https://github.com/tophermade/LESS-Mixins/downloads)    
