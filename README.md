@@ -1,19 +1,33 @@
 lessbag
 =======
-
-
-
 Some useful less mixins.
 
 Version: 0.4
 
+Files:
+------
+* Transforms
+* Shadows
+* Borders
+* Backgrounds
+* helpers
+
+DOING:
+Shadows
+
+DONE:
+1. normalize.less
+2. Transforms
+
 TODO:    
+Split to files
 1. Helpers    
 2. Color names    
 3. Font stacks    
 4. Css3 features    
 5. Grids    
 6. Buttons    
+7. for More - Check SASS, etc.  for inspiration
 
 
 
