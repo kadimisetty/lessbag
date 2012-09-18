@@ -14,6 +14,16 @@
 }
 
 
+
+// Sizing shortcuts
+.size(@height, @width) {
+  width: @width;
+  height: @height;
+}
+
+
+
+
 // Clearfix
 .clearfix {
   *zoom: 1;
@@ -28,20 +38,13 @@
 }
 
 
-// Sizing shortcuts
-.size(@height, @width) {
-  width: @width;
-  height: @height;
-}
-
-
-
 // CSS image replacement
 .hide-text {
     /*
      * Bootstrap version combined with 
      *  version from https://github.com/dancrew32/lesslib/blob/master/mixins.less
     */
+
     display: block;
     text-indent: -999em;
     overflow: hidden;
