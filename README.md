@@ -1,6 +1,5 @@
 # lessbag
-
-## A comprehensive ordered collection of less mixins
+: A comprehensive ordered collection of less mixins
 * Listed at the bottom
 * Sri Kadimisetty
 * 0.6
