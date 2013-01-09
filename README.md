@@ -1,9 +1,9 @@
 # lessbag
 
 ## A comprehensive ordered collection of less mixins
-Credits: Listed at the bottom
-Authors: Sri Kadimisetty
-Version: 0.6
+* Listed at the bottom
+* Sri Kadimisetty
+* 0.6
 
 
 ## Added Sections
