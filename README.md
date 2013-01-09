@@ -1,12 +1,11 @@
-=======
 lessbag
 =======
--------------------------------------------------
+
 A comprehensive ordered collection of less mixins
 -------------------------------------------------
-
-:Version: 0.6
-:Authors: Sri Kadimisetty
+Credits: Listed at the bottom
+Authors: Sri Kadimisetty
+Version: 0.6
 
 
 Added Sections
@@ -16,6 +15,7 @@ Added Sections
 * Borders
 * Backgrounds
 * helpers
+
 
 STATUS
 ------
@@ -41,7 +41,7 @@ Split to files
 7. for More - Check SASS, etc.  for inspiration
 
 Credits:
-~~~~~~~~
+--------
 Many of these mixins were borrowed and edited from some of these locations:    
 1. [LESS ELemenets](http://www.lesselements.com)    
 2. [LESS-Mixins](https://github.com/tophermade/LESS-Mixins/downloads)    
