@@ -1,15 +1,20 @@
-/*
-   Generic Transforms
-   Scale
-   Skew
-   Rotate
-   Translate
-   Translate3d
-   Perspective
-   Transform-Origin
- */
+// Transforms
+// ==========
+// less mixins for transformations
 
-//Regular Transform
+// In this file
+// ------------
+// * Regular Transforms
+// * Scale
+// * Skew
+// * Rotate
+// * Translate
+// * Translate 3d
+// * Transform Origin
+// * Perspective
+
+// Regular Transforms
+// ~~~~~~~~~~~~~~~~~~
 .transform(@string){
 	-webkit-transform: @string;
 	-moz-transform: 	 @string;
@@ -19,6 +24,7 @@
 
 
 // Scale
+// ~~~~~
 .scale(@ratio:2.0) {
     -webkit-transform:  scale(@ratio);
     -moz-transform:     scale(@ratio);
@@ -28,6 +34,7 @@
 
 
 // Skew
+// ~~~~
 .skew (@deg, @deg2) {
     -webkit-transform:  skew(@deg, @deg2);
     -moz-transform:     skew(@deg, @deg2);
@@ -35,7 +42,9 @@
     -o-transform:       skew(@deg, @deg2);
 }
 
-//Rotate
+// Rotate
+// ~~~~~~
+
 .rotate (@deg) {
 	-webkit-transform: rotate(@deg);
 	-moz-transform: 	 rotate(@deg);
@@ -43,7 +52,8 @@
 	-o-transform: 		 rotate(@deg);
 }
 
-//Translate
+// Translate
+// ~~~~~~~~~
 .translate (@x, @y:0) {
 	-webkit-transform:       translate(@x, @y);
 	-moz-transform: 	 translate(@x, @y);
@@ -51,7 +61,8 @@
 	-o-transform: 		 translate(@x, @y);
 }
 
-//Translate3d
+// Translate 3d
+// ~~~~~~~~~~~~
 .translate3d (@x, @y: 0, @z: 0) {
 	-webkit-transform:       translate3d(@x, @y, @z);
 	-moz-transform: 	 translate3d(@x, @y, @z);
@@ -59,7 +70,8 @@
 	-o-transform: 		 translate3d(@x, @y, @z);
 }
 
-//Perspective
+// Perspective
+// ~~~~~~~~~~~
 .perspective (@value: 1000) {
 	-webkit-perspective: 	@value;
 	-moz-perspective: 	@value;
@@ -67,7 +79,8 @@
 	perspective: 		@value;
 }
 
-//Transform Origin
+// Transform Origin
+// ~~~~~~~~~~~~~~~~
 .transform-origin (@x:center, @y:center) {
 	-webkit-transform-origin: @x @y;
 	-moz-transform-origin:    @x @y;
