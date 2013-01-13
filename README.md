@@ -15,6 +15,12 @@ A comprehensive ordered collection of less mixins
 
 ## STATUS
 
+
+## NOTES
+webkit (Safari)
+gecko (Firefox)
+(ie)
+
 ### DOING:
 Shadows
 

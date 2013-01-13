@@ -1,44 +1,55 @@
-/*
- * Shadows:
- * 1. Text Shadow
- * 2. Box shadow
- * 3. Inset Box Shadow
- * 4. Drop Shadow
- */
+// Shadows
+// =======
+// less mixins for Shadows
 
+// In this file
+// ------------
+// * Text Shadow
+// * Box shadpw
+// * Inset Box Shadow
+// * Drop Shadow
+// * Inner Shadow
 
-
-
-//Text Shadow
-.text-shadow (@string: 0 1px 3px rgba(0, 0, 0, 0.25)) {
-	text-shadow: @string;
+// Text Shadow
+// ~~~~~~~~~~~
+.text-shadow (@string : 0 1px 3px rgba(0, 0, 0, 0.25)) {
+	text-shadow       : @string;
 }
 
-//Box Shadow
+// Box Shadow
+// ~~~~~~~~~~
 .box-shadow (@string) {
-	-webkit-box-shadow: @string;
-	-moz-box-shadow:    @string;
-	box-shadow:         @string;
+	-webkit-box-shadow : @string;
+	-moz-box-shadow    : @string;
+	box-shadow         : @string;
 }
 
-//Inset Box Shadow
+// Inset Box Shadow
+// ~~~~~~~~~~~~~~~~
 .inset-box-shadow(@horizontal: 0px, @vertical: 1px, @blur: 2px, @color: #CCC) {
-  -webkit-box-shadow: inset @horizontal @vertical @blur @color;
-  -moz-box-shadow: inset @horizontal @vertical @blur @color;
-  box-shadow: inset @horizontal @vertical @blur @color;
+  -webkit-box-shadow : inset @horizontal @vertical @blur @color;
+  -moz-box-shadow    : inset @horizontal @vertical @blur @color;
+  box-shadow         : inset @horizontal @vertical @blur @color;
 }
 
-//Drop Shadow
+// Drop Shadow
+// ~~~~~~~~~~~
 .drop-shadow (@x: 0, @y: 1px, @blur: 2px, @spread: 0, @alpha: 0.25) {
-	-webkit-box-shadow:  @x @y @blur @spread rgba(0, 0, 0, @alpha);
-	-moz-box-shadow:     @x @y @blur @spread rgba(0, 0, 0, @alpha);
-	box-shadow:          @x @y @blur @spread rgba(0, 0, 0, @alpha);
+	-webkit-box-shadow : @x @y @blur @spread rgba(0, 0, 0, @alpha);
+	-moz-box-shadow    : @x @y @blur @spread rgba(0, 0, 0, @alpha);
+	box-shadow         : @x @y @blur @spread rgba(0, 0, 0, @alpha);
 }
 
-//Inner Shadow
+// Inner Shadow
+// ~~~~~~~~~~~~
 .inner-shadow (@x: 0, @y: 1px, @blur: 2px, @spread: 0, @alpha: 0.25) {
-	-webkit-box-shadow:  inset @x @y @blur @spread rgba(0, 0, 0, @alpha);
-	-moz-box-shadow:     inset @x @y @blur @spread rgba(0, 0, 0, @alpha);
-	box-shadow:          inset @x @y @blur @spread rgba(0, 0, 0, @alpha);
+	-webkit-box-shadow : inset @x @y @blur @spread rgba(0, 0, 0, @alpha);
+	-moz-box-shadow    : inset @x @y @blur @spread rgba(0, 0, 0, @alpha);
+	box-shadow         : inset @x @y @blur @spread rgba(0, 0, 0, @alpha);
 }
 
+
+// Notes
+// -----
+// Credits
+// :Listed in Credits in (lessbag)[https://www.github.com/happysri/lessbag]
