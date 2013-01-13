@@ -1,28 +1,53 @@
 // Utilities
+// =========
+// Some handy less mixins
 
+// In this file
+// ------------
+// * Hide
+// * Show
+// * Invisible
+// * Size
+// * Clearfix
+// * Hide text
+
+// Hide
+// ----
+// ```less
 .hide {
   display: none;
 }
+/// ```
 
+// Show
+// ----
+// ```less
 .show {
   display: block;
 }
+/// ```
 
+// Invisible
+// ---------
+// ```less
 .invisible {
   visibility: hidden;
 }
+/// ```
 
 
 // Sizing shortcuts
+// ----------------
+// ```less
 .size(@height, @width) {
   width: @width;
   height: @height;
 }
-
-
-
+/// ```
 
 // Clearfix
+// --------
+// ```less
 .clearfix {
   *zoom: 1;
   &:before,
@@ -34,15 +59,13 @@
     clear: both;
   }
 }
-
+/// ```
 
 // CSS image replacement
+// ---------------------
+// Combining approaches from [Bootstrap][1] and [mixins.less][2].
+// ```less
 .hide-text {
-    /*
-     * Bootstrap version combined with 
-     *  version from https://github.com/dancrew32/lesslib/blob/master/mixins.less
-    */
-
     display: block;
     text-indent: -999em;
     overflow: hidden;
@@ -56,3 +79,9 @@
     background-color: transparent;
     border: 0;
 }
+/// ```
+
+// Notes
+// -----
+// [1]:   https://github.com/twitter/bootstrap                          "Bootstrap"
+// [2]:   https://github.com/dancrew32/lesslib/blob/master/mixins.less  "mixins.less"
