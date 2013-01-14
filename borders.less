@@ -1,69 +1,79 @@
-/*
- * BorderRadius
- */
+// Borders
+// =========
+// less mixins related to borders etc.
 
-.rounded(@radius: 2px) {
-    -webkit-border-radius:    @radius;
-    -moz-border-radius:       @radius;
-    border-radius:            @radius;
+// In this file
+// ------------
+// * Borders with rounded corners
+// * Borders with Individually rounded corners
+// * Borders with multipe colors
+// * Borders with indivdually specified sizes
 
-    -moz-background-clip:     padding;
-    -webkit-background-clip:  padding-box;
-    background-clip:          padding-box;
-}
-
+// Borders with rounded corners
+// ----------------------------
+// ```less
 .border-radius (@radius: 4px) {
-    -webkit-border-radius: @radius;
-    -moz-border-radius:    @radius;
-    border-radius:         @radius;
+    -webkit-border-radius   : @radius;
+    -moz-border-radius      : @radius;
+    border-radius           : @radius;
 
-    -moz-background-clip:    padding;
-    -webkit-background-clip: padding-box;
-    background-clip:         padding-box;
+    -moz-background-clip    : padding;
+    -webkit-background-clip : padding-box;
+    background-clip         : padding-box;
 }
 
-// Individual Border Radius
-// Allow specifying individual radii for all borders
+// Borders with Individually rounded corners
+// -----------------------------------------
+// ```less
 .individual-border-radius(@topright: 0, @bottomright: 0, @bottomleft: 0, @topleft: 0) {
-    -webkit-border-top-right-radius:     @topright;
-    -webkit-border-bottom-right-radius:  @bottomright;
-    -webkit-border-bottom-left-radius:   @bottomleft;
-    -webkit-border-top-left-radius:      @topleft;
+    -webkit-border-top-right-radius    : @topright;
+    -webkit-border-bottom-right-radius : @bottomright;
+    -webkit-border-bottom-left-radius  : @bottomleft;
+    -webkit-border-top-left-radius     : @topleft;
 
-    -moz-border-radius-topright:         @topright;
-    -moz-border-radius-bottomright:      @bottomright;
-    -moz-border-radius-bottomleft:       @bottomleft;
-    -moz-border-radius-topleft:          @topleft;
+    -moz-border-radius-topright        : @topright;
+    -moz-border-radius-bottomright     : @bottomright;
+    -moz-border-radius-bottomleft      : @bottomleft;
+    -moz-border-radius-topleft         : @topleft;
 
-    border-top-right-radius:             @topright;
-    border-bottom-right-radius:          @bottomright;
-    border-bottom-left-radius:           @bottomleft;
-    border-top-left-radius:              @topleft;
+    border-top-right-radius            : @topright;
+    border-bottom-right-radius         : @bottomright;
+    border-bottom-left-radius          : @bottomleft;
+    border-top-left-radius             : @topleft;
 
-    -moz-background-clip:                padding;
-    -webkit-background-clip:             padding-box;
-    background-clip:                     padding-box;
+    -moz-background-clip               : padding;
+    -webkit-background-clip            : padding-box;
+    background-clip                    : padding-box;
 }
+// ```
 
 
+// Borders with multipe colors
+// ---------------------------
+// ```less
 .multi-color-border(@top, @sides, @bottom) {
-    border-top: 1px solid @top;
-    border-left: 1px solid @sides;
-    border-right: 1px solid @sides;
-    border-bottom: 1px solid @bottom;
+    border-top    : 1px solid @top;
+    border-left   : 1px solid @sides;
+    border-right  : 1px solid @sides;
+    border-bottom : 1px solid @bottom;
 }
+/// ```
 
+// Borders with indivdually specified sizes
+// ---------------------------------------
+// ```less
 .multi-border-radius(@topLeft: 5px, @topRight: 5px, @bottomRight: 5px, @bottomLeft: 5px) {
-    -webkit-border-top-left-radius: @topLeft;
-    -webkit-border-top-right-radius: @topRight;
-    -webkit-border-bottom-right-radius: @bottomRight;
-    -webkit-border-bottom-left-radius: @bottomLeft;
-    -moz-border-radius-topleft: @topLeft;
-    -moz-border-radius-topright: @topRight;
-    -moz-border-radius-bottomright: @bottomRight;
-    -moz-border-radius-bottomleft: @bottomLeft;
-    border-top-left-radius: @topLeft;
-    border-top-right-radius: @topRight;
-    border-bottom-right-radius: @bottomRight;
-    border-bottom-left-radius: @bottomLeft;
+    -webkit-border-top-left-radius     : @topLeft;
+    -webkit-border-top-right-radius    : @topRight;
+    -webkit-border-bottom-right-radius : @bottomRight;
+    -webkit-border-bottom-left-radius  : @bottomLeft;
+    -moz-border-radius-topleft         : @topLeft;
+    -moz-border-radius-topright        : @topRight;
+    -moz-border-radius-bottomright     : @bottomRight;
+    -moz-border-radius-bottomleft      : @bottomLeft;
+    border-top-left-radius             : @topLeft;
+    border-top-right-radius            : @topRight;
+    border-bottom-right-radius         : @bottomRight;
+    border-bottom-left-radius          : @bottomLeft;
 }
+/// ```
